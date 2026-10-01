@@ -1,0 +1,105 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 880 260" width="100%" height="100%">
+  <defs>
+    <radialGradient id="batBg" cx="50%" cy="30%" r="70%">
+      <stop offset="0%" stop-color="#1e1136" />
+      <stop offset="50%" stop-color="#0e071a" />
+      <stop offset="100%" stop-color="#05030a" />
+    </radialGradient>
+    <linearGradient id="purpleRim" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#a855f7" />
+      <stop offset="50%" stop-color="#6b21a8" />
+      <stop offset="100%" stop-color="#a855f7" />
+    </linearGradient>
+    <filter id="purpleGlowTactical">
+      <feGaussianBlur stdDeviation="4" result="blur" />
+      <feMerge>
+        <feMergeNode in="blur" />
+        <feMergeNode in="SourceGraphic" />
+      </feMerge>
+    </filter>
+  </defs>
+
+  <style>
+    .tactical-mono { font-family: 'SF Pro Display', -apple-system, 'Segoe UI', monospace; }
+    .tactical-head { font-weight: 900; letter-spacing: 3px; }
+  </style>
+
+  <!-- Base Panel -->
+  <rect width="880" height="260" rx="14" fill="url(#batBg)" stroke="#581c87" stroke-width="1.5" />
+
+  <!-- Subtle Tactical Halftone / Dot Grid -->
+  <g opacity="0.08" fill="#c084fc">
+    <circle cx="40" cy="40" r="1.5"/><circle cx="80" cy="40" r="1.5"/><circle cx="120" cy="40" r="1.5"/><circle cx="160" cy="40" r="1.5"/><circle cx="200" cy="40" r="1.5"/><circle cx="240" cy="40" r="1.5"/><circle cx="280" cy="40" r="1.5"/><circle cx="320" cy="40" r="1.5"/><circle cx="360" cy="40" r="1.5"/><circle cx="400" cy="40" r="1.5"/><circle cx="440" cy="40" r="1.5"/><circle cx="480" cy="40" r="1.5"/><circle cx="520" cy="40" r="1.5"/><circle cx="560" cy="40" r="1.5"/><circle cx="600" cy="40" r="1.5"/><circle cx="640" cy="40" r="1.5"/><circle cx="680" cy="40" r="1.5"/><circle cx="720" cy="40" r="1.5"/><circle cx="760" cy="40" r="1.5"/><circle cx="800" cy="40" r="1.5"/><circle cx="840" cy="40" r="1.5"/>
+    <circle cx="40" cy="80" r="1.5"/><circle cx="80" cy="80" r="1.5"/><circle cx="120" cy="80" r="1.5"/><circle cx="160" cy="80" r="1.5"/><circle cx="200" cy="80" r="1.5"/><circle cx="240" cy="80" r="1.5"/><circle cx="280" cy="80" r="1.5"/><circle cx="320" cy="80" r="1.5"/><circle cx="360" cy="80" r="1.5"/><circle cx="400" cy="80" r="1.5"/><circle cx="440" cy="80" r="1.5"/><circle cx="480" cy="80" r="1.5"/><circle cx="520" cy="80" r="1.5"/><circle cx="560" cy="80" r="1.5"/><circle cx="600" cy="80" r="1.5"/><circle cx="640" cy="80" r="1.5"/><circle cx="680" cy="80" r="1.5"/><circle cx="720" cy="80" r="1.5"/><circle cx="760" cy="80" r="1.5"/><circle cx="800" cy="80" r="1.5"/><circle cx="840" cy="80" r="1.5"/>
+    <circle cx="40" cy="180" r="1.5"/><circle cx="80" cy="180" r="1.5"/><circle cx="120" cy="180" r="1.5"/><circle cx="160" cy="180" r="1.5"/><circle cx="200" cy="180" r="1.5"/><circle cx="240" cy="180" r="1.5"/><circle cx="280" cy="180" r="1.5"/><circle cx="320" cy="180" r="1.5"/><circle cx="360" cy="180" r="1.5"/><circle cx="400" cy="180" r="1.5"/><circle cx="440" cy="180" r="1.5"/><circle cx="480" cy="180" r="1.5"/><circle cx="520" cy="180" r="1.5"/><circle cx="560" cy="180" r="1.5"/><circle cx="600" cy="180" r="1.5"/><circle cx="640" cy="180" r="1.5"/><circle cx="680" cy="180" r="1.5"/><circle cx="720" cy="180" r="1.5"/><circle cx="760" cy="180" r="1.5"/><circle cx="800" cy="180" r="1.5"/><circle cx="840" cy="180" r="1.5"/>
+  </g>
+
+  <!-- Tactical Header -->
+  <g transform="translate(30, 36)">
+    <!-- Stylized Comic Wing Emblem -->
+    <path d="M 0 10 L 15 2 L 20 6 L 25 0 L 25 14 L 15 16 Z M 50 10 L 35 2 L 30 6 L 25 0 L 25 14 L 35 16 Z" fill="#a855f7" filter="url(#purpleGlowTactical)" />
+    <text x="65" y="14" fill="#ffffff" class="tactical-mono tactical-head" font-size="16">BATMAN // STRATEGY &amp; DEEP SYSTEM ARCHITECTURE</text>
+    <text x="730" y="14" fill="#9333ea" class="tactical-mono" font-size="11" font-weight="700">TACTICAL_SYS_ACTIVE</text>
+  </g>
+
+  <!-- 5 Tactical Stack Pillars -->
+  <!-- Card 1: SYSTEM DESIGN -->
+  <g transform="translate(30, 75)">
+    <rect width="152" height="150" rx="8" fill="#0d0818" stroke="#3b0764" stroke-width="1.2" />
+    <path d="M 0 0 L 20 0 L 0 20 Z" fill="#9333ea" />
+    <text x="14" y="32" fill="#c084fc" class="tactical-mono" font-size="12" font-weight="800">SYSTEM DESIGN</text>
+    <line x1="14" y1="42" x2="138" y2="42" stroke="#581c87" stroke-width="1" />
+    <text x="14" y="66" fill="#e2e8f0" class="tactical-mono" font-size="11" font-weight="600">▪ Scalable Core</text>
+    <text x="14" y="88" fill="#94a3b8" class="tactical-mono" font-size="10.5">▪ Microservices</text>
+    <text x="14" y="108" fill="#94a3b8" class="tactical-mono" font-size="10.5">▪ Fault Tolerance</text>
+    <text x="14" y="130" fill="#a855f7" class="tactical-mono" font-size="9" font-weight="700">PREPARED: 100%</text>
+  </g>
+
+  <!-- Card 2: DEBUGGING -->
+  <g transform="translate(195, 75)">
+    <rect width="152" height="150" rx="8" fill="#0d0818" stroke="#3b0764" stroke-width="1.2" />
+    <path d="M 0 0 L 20 0 L 0 20 Z" fill="#9333ea" />
+    <text x="14" y="32" fill="#c084fc" class="tactical-mono" font-size="12" font-weight="800">DEBUGGING</text>
+    <line x1="14" y1="42" x2="138" y2="42" stroke="#581c87" stroke-width="1" />
+    <text x="14" y="66" fill="#e2e8f0" class="tactical-mono" font-size="11" font-weight="600">▪ Root Cause Anal.</text>
+    <text x="14" y="88" fill="#94a3b8" class="tactical-mono" font-size="10.5">▪ Memory Profiling</text>
+    <text x="14" y="108" fill="#94a3b8" class="tactical-mono" font-size="10.5">▪ Trace Execution</text>
+    <text x="14" y="130" fill="#a855f7" class="tactical-mono" font-size="9" font-weight="700">DETECT: ZERO-FAIL</text>
+  </g>
+
+  <!-- Card 3: LOGIC -->
+  <g transform="translate(360, 75)">
+    <rect width="152" height="150" rx="8" fill="#0d0818" stroke="#3b0764" stroke-width="1.2" />
+    <path d="M 0 0 L 20 0 L 0 20 Z" fill="#9333ea" />
+    <text x="14" y="32" fill="#c084fc" class="tactical-mono" font-size="12" font-weight="800">LOGIC</text>
+    <line x1="14" y1="42" x2="138" y2="42" stroke="#581c87" stroke-width="1" />
+    <text x="14" y="66" fill="#e2e8f0" class="tactical-mono" font-size="11" font-weight="600">▪ State Machines</text>
+    <text x="14" y="88" fill="#94a3b8" class="tactical-mono" font-size="10.5">▪ Data Algorithms</text>
+    <text x="14" y="108" fill="#94a3b8" class="tactical-mono" font-size="10.5">▪ Determinism</text>
+    <text x="14" y="130" fill="#a855f7" class="tactical-mono" font-size="9" font-weight="700">PROVED: RIGOROUS</text>
+  </g>
+
+  <!-- Card 4: SECURITY -->
+  <g transform="translate(525, 75)">
+    <rect width="152" height="150" rx="8" fill="#0d0818" stroke="#3b0764" stroke-width="1.2" />
+    <path d="M 0 0 L 20 0 L 0 20 Z" fill="#9333ea" />
+    <text x="14" y="32" fill="#c084fc" class="tactical-mono" font-size="12" font-weight="800">SECURITY</text>
+    <line x1="14" y1="42" x2="138" y2="42" stroke="#581c87" stroke-width="1" />
+    <text x="14" y="66" fill="#e2e8f0" class="tactical-mono" font-size="11" font-weight="600">▪ JWT &amp; Auth Guard</text>
+    <text x="14" y="88" fill="#94a3b8" class="tactical-mono" font-size="10.5">▪ Zero-Trust Mindset</text>
+    <text x="14" y="108" fill="#94a3b8" class="tactical-mono" font-size="10.5">▪ Payload Sanitization</text>
+    <text x="14" y="130" fill="#a855f7" class="tactical-mono" font-size="9" font-weight="700">SHIELD: REINFORCED</text>
+  </g>
+
+  <!-- Card 5: PROBLEM SOLVING -->
+  <g transform="translate(690, 75)">
+    <rect width="152" height="150" rx="8" fill="#0d0818" stroke="#3b0764" stroke-width="1.2" />
+    <path d="M 0 0 L 20 0 L 0 20 Z" fill="#9333ea" />
+    <text x="14" y="32" fill="#c084fc" class="tactical-mono" font-size="11" font-weight="800">PROBLEM SOLVING</text>
+    <line x1="14" y1="42" x2="138" y2="42" stroke="#581c87" stroke-width="1" />
+    <text x="14" y="66" fill="#e2e8f0" class="tactical-mono" font-size="11" font-weight="600">▪ Contingency Plans</text>
+    <text x="14" y="88" fill="#94a3b8" class="tactical-mono" font-size="10.5">▪ Edge-Case Mastery</text>
+    <text x="14" y="108" fill="#94a3b8" class="tactical-mono" font-size="10.5">▪ Adaptive Tactics</text>
+    <text x="14" y="130" fill="#a855f7" class="tactical-mono" font-size="9" font-weight="700">STATUS: SOLVED</text>
+  </g>
+</svg>

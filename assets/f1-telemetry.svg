@@ -1,0 +1,96 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 880 300" width="100%" height="100%">
+  <defs>
+    <radialGradient id="f1Bg" cx="30%" cy="50%" r="70%">
+      <stop offset="0%" stop-color="#1c0709" />
+      <stop offset="50%" stop-color="#100506" />
+      <stop offset="100%" stop-color="#070203" />
+    </radialGradient>
+    <linearGradient id="redGlowGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#ff1801" />
+      <stop offset="100%" stop-color="#ff7b00" />
+    </linearGradient>
+    <filter id="f1RedGlow">
+      <feGaussianBlur stdDeviation="4" result="blur" />
+      <feMerge>
+        <feMergeNode in="blur" />
+        <feMergeNode in="SourceGraphic" />
+      </feMerge>
+    </filter>
+  </defs>
+
+  <style>
+    .f1-mono { font-family: 'SF Pro Display', -apple-system, 'Segoe UI', monospace; }
+    .f1-italic { font-style: italic; font-weight: 900; }
+  </style>
+
+  <!-- Panel Base -->
+  <rect width="880" height="300" rx="14" fill="url(#f1Bg)" stroke="#e10600" stroke-width="1.5" stroke-opacity="0.6" />
+
+  <!-- Racing Checkered Accents -->
+  <g opacity="0.15" fill="#ffffff">
+    <rect x="740" y="20" width="12" height="12" /><rect x="764" y="20" width="12" height="12" /><rect x="788" y="20" width="12" height="12" /><rect x="812" y="20" width="12" height="12" /><rect x="836" y="20" width="12" height="12" />
+    <rect x="752" y="32" width="12" height="12" /><rect x="776" y="32" width="12" height="12" /><rect x="800" y="32" width="12" height="12" /><rect x="824" y="32" width="12" height="12" /><rect x="848" y="32" width="12" height="12" />
+  </g>
+
+  <!-- Telemetry Header -->
+  <g transform="translate(30, 40)">
+    <rect x="0" y="0" width="8" height="28" fill="#e10600" filter="url(#f1RedGlow)" />
+    <text x="18" y="21" fill="#ffffff" class="f1-mono f1-italic" font-size="20" letter-spacing="3">F1 TELEMETRY // SECTOR 1 PURPLE</text>
+    <text x="440" y="21" fill="#e10600" class="f1-mono" font-size="12" font-weight="800">DRS: ENABLED  |  GEAR: 8  |  LAP: FASTEST</text>
+  </g>
+
+  <!-- Left: 4 Telemetry Meters -->
+  <g transform="translate(30, 85)">
+    <!-- Meter 1: BUILD SPEED -->
+    <g transform="translate(0, 0)">
+      <text x="0" y="16" fill="#f87171" class="f1-mono" font-size="12" font-weight="800">BUILD SPEED</text>
+      <text x="360" y="16" fill="#e2e8f0" class="f1-mono" font-size="11" font-weight="700">88%</text>
+      <rect x="0" y="24" width="400" height="12" rx="6" fill="#2d0f12" />
+      <rect x="0" y="24" width="352" height="12" rx="6" fill="url(#redGlowGrad)" filter="url(#f1RedGlow)" />
+    </g>
+
+    <!-- Meter 2: LEARNING -->
+    <g transform="translate(0, 48)">
+      <text x="0" y="16" fill="#f87171" class="f1-mono" font-size="12" font-weight="800">LEARNING</text>
+      <text x="360" y="16" fill="#e2e8f0" class="f1-mono" font-size="11" font-weight="700">95%</text>
+      <rect x="0" y="24" width="400" height="12" rx="6" fill="#2d0f12" />
+      <rect x="0" y="24" width="380" height="12" rx="6" fill="url(#redGlowGrad)" filter="url(#f1RedGlow)" />
+    </g>
+
+    <!-- Meter 3: EXPERIMENTS -->
+    <g transform="translate(0, 96)">
+      <text x="0" y="16" fill="#f87171" class="f1-mono" font-size="12" font-weight="800">EXPERIMENTS</text>
+      <text x="360" y="16" fill="#e2e8f0" class="f1-mono" font-size="11" font-weight="700">78%</text>
+      <rect x="0" y="24" width="400" height="12" rx="6" fill="#2d0f12" />
+      <rect x="0" y="24" width="312" height="12" rx="6" fill="url(#redGlowGrad)" filter="url(#f1RedGlow)" />
+    </g>
+
+    <!-- Meter 4: PROJECTS -->
+    <g transform="translate(0, 144)">
+      <text x="0" y="16" fill="#f87171" class="f1-mono" font-size="12" font-weight="800">PROJECTS</text>
+      <text x="360" y="16" fill="#e2e8f0" class="f1-mono" font-size="11" font-weight="700">85%</text>
+      <rect x="0" y="24" width="400" height="12" rx="6" fill="#2d0f12" />
+      <rect x="0" y="24" width="340" height="12" rx="6" fill="url(#redGlowGrad)" filter="url(#f1RedGlow)" />
+    </g>
+  </g>
+
+  <!-- Right: F1-PREDICTOR Spotlight Cockpit -->
+  <g transform="translate(480, 85)">
+    <rect width="365" height="185" rx="10" fill="#140608" stroke="#e10600" stroke-width="1.2" />
+    <path d="M 0 0 L 25 0 L 0 25 Z" fill="#e10600" />
+    <text x="22" y="32" fill="#ffffff" class="f1-mono f1-italic" font-size="15" letter-spacing="1">FEATURED REPO: F1-PREDICTOR</text>
+    <line x1="22" y1="44" x2="340" y2="44" stroke="#450a0a" stroke-width="1" />
+    
+    <text x="22" y="70" fill="#fca5a5" class="f1-mono" font-size="11.5" font-weight="700">Grand Prix Race Outcome Prediction</text>
+    <text x="22" y="92" fill="#94a3b8" class="f1-mono" font-size="11">Data-driven machine learning models</text>
+    <text x="22" y="110" fill="#94a3b8" class="f1-mono" font-size="11">analyzing circuit telemetry, qualifying</text>
+    <text x="22" y="128" fill="#94a3b8" class="f1-mono" font-size="11">pace, and pit-stop race strategies.</text>
+    
+    <!-- Badges -->
+    <rect x="22" y="146" width="90" height="22" rx="4" fill="#310b0e" stroke="#e10600" stroke-width="1" />
+    <text x="32" y="161" fill="#fca5a5" class="f1-mono" font-size="9.5" font-weight="700">PYTHON / ML</text>
+    
+    <rect x="120" y="146" width="85" height="22" rx="4" fill="#1e1b4b" stroke="#6366f1" stroke-width="1" />
+    <text x="130" y="161" fill="#a5b4fc" class="f1-mono" font-size="9.5" font-weight="700">TELEMETRY</text>
+  </g>
+</svg>

@@ -1,0 +1,166 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 880 420" width="100%" height="100%">
+  <defs>
+    <radialGradient id="ringBg" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#022c1b" stop-opacity="0.8" />
+      <stop offset="35%" stop-color="#061811" stop-opacity="0.9" />
+      <stop offset="70%" stop-color="#040b08" stop-opacity="0.95" />
+      <stop offset="100%" stop-color="#020504" stop-opacity="1" />
+    </radialGradient>
+    <radialGradient id="corePlasma" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="1" />
+      <stop offset="25%" stop-color="#a7f3d0" stop-opacity="0.9" />
+      <stop offset="60%" stop-color="#00ff88" stop-opacity="0.6" />
+      <stop offset="90%" stop-color="#059669" stop-opacity="0.2" />
+      <stop offset="100%" stop-color="#000000" stop-opacity="0" />
+    </radialGradient>
+    <linearGradient id="emeraldStroke" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#6ee7b7" />
+      <stop offset="50%" stop-color="#00ff88" />
+      <stop offset="100%" stop-color="#047857" />
+    </linearGradient>
+    <linearGradient id="orbitLine" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#a855f7" stop-opacity="0.8" />
+      <stop offset="50%" stop-color="#00ff88" stop-opacity="0.9" />
+      <stop offset="100%" stop-color="#00f5ff" stop-opacity="0.8" />
+    </linearGradient>
+
+    <filter id="emeraldGlow" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="8" result="blur" />
+      <feMerge>
+        <feMergeNode in="blur" />
+        <feMergeNode in="blur" />
+        <feMergeNode in="SourceGraphic" />
+      </feMerge>
+    </filter>
+    <filter id="softGlow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="4" result="blur" />
+      <feMerge>
+        <feMergeNode in="blur" />
+        <feMergeNode in="SourceGraphic" />
+      </feMerge>
+    </filter>
+  </defs>
+
+  <style>
+    .font-mono { font-family: 'SF Pro Display', -apple-system, 'Segoe UI', 'Courier New', monospace; }
+    .font-sans { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', sans-serif; }
+    .gl-title { font-weight: 900; letter-spacing: 5px; }
+    .node-text { font-weight: 800; font-size: 13px; letter-spacing: 2px; }
+  </style>
+
+  <!-- Background Base -->
+  <rect width="880" height="420" rx="18" fill="url(#ringBg)" stroke="#00ff88" stroke-width="1.2" stroke-opacity="0.4" />
+
+  <!-- Hexagonal & Circular Grid Overlay -->
+  <g opacity="0.12" stroke="#00ff88" stroke-width="0.8">
+    <circle cx="440" cy="190" r="180" fill="none" stroke-dasharray="6,8" />
+    <circle cx="440" cy="190" r="140" fill="none" />
+    <circle cx="440" cy="190" r="220" fill="none" stroke-dasharray="2,12" />
+    <line x1="440" y1="20" x2="440" y2="360" stroke-dasharray="4,6" />
+    <line x1="120" y1="190" x2="760" y2="190" stroke-dasharray="4,6" />
+  </g>
+
+  <!-- Laser Vector Conduits Connecting Ring to Nodes -->
+  <!-- Center to Top (AI) -->
+  <line x1="440" y1="190" x2="440" y2="60" stroke="#00ff88" stroke-width="2" stroke-dasharray="5,5" filter="url(#softGlow)" />
+  <!-- Center to Top-Right (ROBOTICS) -->
+  <line x1="440" y1="190" x2="680" y2="105" stroke="#00ff88" stroke-width="2" stroke-dasharray="5,5" filter="url(#softGlow)" />
+  <!-- Center to Bottom-Right (SOFTWARE) -->
+  <line x1="440" y1="190" x2="680" y2="280" stroke="#00ff88" stroke-width="2" stroke-dasharray="5,5" filter="url(#softGlow)" />
+  <!-- Center to Bottom-Left (VISION) -->
+  <line x1="440" y1="190" x2="200" y2="280" stroke="#00ff88" stroke-width="2" stroke-dasharray="5,5" filter="url(#softGlow)" />
+  <!-- Center to Top-Left (AUTOMATION) -->
+  <line x1="440" y1="190" x2="200" y2="105" stroke="#00ff88" stroke-width="2" stroke-dasharray="5,5" filter="url(#softGlow)" />
+
+  <!-- ==================== CENTRAL GIANT EMERALD ENERGY RING ==================== -->
+  <g transform="translate(440, 190)">
+    <!-- Giant Radiant Ambient Corona -->
+    <circle cx="0" cy="0" r="115" fill="url(#corePlasma)" filter="url(#emeraldGlow)" />
+
+    <!-- Outer Rotating Arc Segments -->
+    <circle cx="0" cy="0" r="102" fill="none" stroke="#a855f7" stroke-width="2" stroke-opacity="0.6" stroke-dasharray="25,40" />
+    <circle cx="0" cy="0" r="95" fill="none" stroke="#00f5ff" stroke-width="1.5" stroke-opacity="0.7" stroke-dasharray="70,25,10,25" />
+    <circle cx="0" cy="0" r="88" fill="none" stroke="#00ff88" stroke-width="2.5" stroke-opacity="0.8" stroke-dasharray="4,8" />
+
+    <!-- Massive Emerald Ring Band -->
+    <circle cx="0" cy="0" r="76" fill="none" stroke="url(#emeraldStroke)" stroke-width="9" filter="url(#emeraldGlow)" />
+    <circle cx="0" cy="0" r="76" fill="none" stroke="#ffffff" stroke-width="2" stroke-opacity="0.9" />
+
+    <!-- Energy Emitter Teeth -->
+    <g fill="#00ff88" filter="url(#softGlow)">
+      <polygon points="-6,-84 6,-84 0,-70" />
+      <polygon points="-6,84 6,84 0,70" />
+      <polygon points="-84,-6 -84,6 -70,0" />
+      <polygon points="84,-6 84,6 70,0" />
+    </g>
+
+    <!-- Green Lantern Battery Emblem Graphic -->
+    <!-- Top Horizontal Bracket -->
+    <path d="M -34 -44 L 34 -44 L 28 -32 L -28 -32 Z" fill="#00ff88" filter="url(#emeraldGlow)" />
+    <path d="M -34 -44 L 34 -44 L 28 -32 L -28 -32 Z" fill="#ffffff" opacity="0.6" />
+    <!-- Bottom Horizontal Bracket -->
+    <path d="M -34 44 L 34 44 L 28 32 L -28 32 Z" fill="#00ff88" filter="url(#emeraldGlow)" />
+    <path d="M -34 44 L 34 44 L 28 32 L -28 32 Z" fill="#ffffff" opacity="0.6" />
+
+    <!-- Lantern Core Ring & Chamber -->
+    <circle cx="0" cy="0" r="48" fill="#021f13" stroke="#00ff88" stroke-width="3.5" filter="url(#emeraldGlow)" />
+    <circle cx="0" cy="0" r="38" fill="#01140c" />
+
+    <!-- CENTERPIECE TEXT: < CODE > -->
+    <text x="0" y="9" fill="#ffffff" class="font-mono" font-size="22" font-weight="900" text-anchor="middle" filter="url(#emeraldGlow)" letter-spacing="3">
+      &lt; CODE &gt;
+    </text>
+
+    <!-- Spark particles -->
+    <circle cx="-50" cy="-60" r="3" fill="#ffffff" filter="url(#softGlow)" />
+    <circle cx="58" cy="-45" r="2.5" fill="#a7f3d0" />
+    <circle cx="65" cy="52" r="3.5" fill="#00ff88" filter="url(#softGlow)" />
+    <circle cx="-55" cy="48" r="2" fill="#00f5ff" />
+  </g>
+
+  <!-- ==================== SATELLITE TECH NODES ==================== -->
+
+  <!-- NODE 1: AI (Top) -->
+  <g transform="translate(440, 52)">
+    <rect x="-70" y="-18" width="140" height="36" rx="18" fill="#031f14" stroke="#00ff88" stroke-width="2" filter="url(#softGlow)" />
+    <circle cx="-48" cy="0" r="5" fill="#00ff88" filter="url(#softGlow)" />
+    <text x="5" y="5" fill="#00ff88" class="font-mono node-text" text-anchor="middle">⚡ AI</text>
+  </g>
+
+  <!-- NODE 2: ROBOTICS (Top-Right) -->
+  <g transform="translate(680, 105)">
+    <rect x="-85" y="-18" width="170" height="36" rx="18" fill="#031f14" stroke="#00ff88" stroke-width="2" filter="url(#softGlow)" />
+    <circle cx="-62" cy="0" r="5" fill="#00ff88" filter="url(#softGlow)" />
+    <text x="10" y="5" fill="#00ff88" class="font-mono node-text" text-anchor="middle">⚙ ROBOTICS</text>
+  </g>
+
+  <!-- NODE 3: SOFTWARE (Bottom-Right) -->
+  <g transform="translate(680, 280)">
+    <rect x="-85" y="-18" width="170" height="36" rx="18" fill="#031f14" stroke="#00ff88" stroke-width="2" filter="url(#softGlow)" />
+    <circle cx="-62" cy="0" r="5" fill="#00ff88" filter="url(#softGlow)" />
+    <text x="10" y="5" fill="#00ff88" class="font-mono node-text" text-anchor="middle">💻 SOFTWARE</text>
+  </g>
+
+  <!-- NODE 4: VISION (Bottom-Left) -->
+  <g transform="translate(200, 280)">
+    <rect x="-80" y="-18" width="160" height="36" rx="18" fill="#031f14" stroke="#00ff88" stroke-width="2" filter="url(#softGlow)" />
+    <circle cx="-56" cy="0" r="5" fill="#00ff88" filter="url(#softGlow)" />
+    <text x="10" y="5" fill="#00ff88" class="font-mono node-text" text-anchor="middle">👁 VISION</text>
+  </g>
+
+  <!-- NODE 5: AUTOMATION (Top-Left) -->
+  <g transform="translate(200, 105)">
+    <rect x="-95" y="-18" width="190" height="36" rx="18" fill="#031f14" stroke="#00ff88" stroke-width="2" filter="url(#softGlow)" />
+    <circle cx="-72" cy="0" r="5" fill="#00ff88" filter="url(#softGlow)" />
+    <text x="10" y="5" fill="#00ff88" class="font-mono node-text" text-anchor="middle">⚡ AUTOMATION</text>
+  </g>
+
+  <!-- ==================== BOTTOM INSPIRATIONAL MOTTO ==================== -->
+  <g transform="translate(440, 375)">
+    <text x="0" y="0" fill="#a7f3d0" class="font-mono" font-size="14.5" font-weight="600" font-style="italic" text-anchor="middle" letter-spacing="1.2">
+      "Imagination becomes technology when you have the will to build it."
+    </text>
+    <line x1="-240" y1="16" x2="240" y2="16" stroke="#00ff88" stroke-width="1.2" stroke-opacity="0.5" />
+    <circle cx="0" cy="16" r="3.5" fill="#00ff88" filter="url(#softGlow)" />
+  </g>
+</svg>

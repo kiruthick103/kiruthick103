@@ -1,0 +1,93 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 880 230" width="100%" height="100%">
+  <defs>
+    <radialGradient id="spideyBg" cx="50%" cy="50%" r="65%">
+      <stop offset="0%" stop-color="#1e1124" />
+      <stop offset="50%" stop-color="#0e0a17" />
+      <stop offset="100%" stop-color="#050308" />
+    </radialGradient>
+    <linearGradient id="webLine" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ef4444" stop-opacity="0.8" />
+      <stop offset="50%" stop-color="#a855f7" stop-opacity="0.5" />
+      <stop offset="100%" stop-color="#3b82f6" stop-opacity="0.8" />
+    </linearGradient>
+    <filter id="redBlueGlow">
+      <feGaussianBlur stdDeviation="4" result="blur" />
+      <feMerge>
+        <feMergeNode in="blur" />
+        <feMergeNode in="SourceGraphic" />
+      </feMerge>
+    </filter>
+  </defs>
+
+  <style>
+    .web-mono { font-family: 'SF Pro Display', -apple-system, 'Segoe UI', monospace; }
+    .node-title { font-weight: 800; font-size: 13px; letter-spacing: 1px; }
+  </style>
+
+  <!-- Panel Base -->
+  <rect width="880" height="230" rx="14" fill="url(#spideyBg)" stroke="#ef4444" stroke-width="1.2" stroke-opacity="0.5" />
+
+  <!-- Spider Web Geometries -->
+  <g stroke="url(#webLine)" stroke-width="1" fill="none" opacity="0.35">
+    <!-- Web Rings -->
+    <polygon points="440,30 620,70 680,160 440,200 200,160 260,70" />
+    <polygon points="440,65 540,90 580,145 440,170 300,145 340,90" />
+    <polygon points="440,95 490,110 510,135 440,150 370,135 390,110" />
+    <!-- Radial Web Spokes -->
+    <line x1="440" y1="125" x2="440" y2="25" />
+    <line x1="440" y1="125" x2="680" y2="70" />
+    <line x1="440" y1="125" x2="720" y2="170" />
+    <line x1="440" y1="125" x2="440" y2="215" />
+    <line x1="440" y1="125" x2="160" y2="170" />
+    <line x1="440" y1="125" x2="200" y2="70" />
+  </g>
+
+  <!-- Web Nodes (Interactive Pill Graphics) -->
+  
+  <!-- Node 1: HTML5 (Left-Top) -->
+  <g transform="translate(130, 65)">
+    <rect x="-55" y="-18" width="110" height="36" rx="18" fill="#1c0b12" stroke="#ef4444" stroke-width="1.5" />
+    <circle cx="-35" cy="0" r="4" fill="#ef4444" />
+    <text x="8" y="5" fill="#fca5a5" class="web-mono node-title" text-anchor="middle">HTML5</text>
+  </g>
+
+  <!-- Node 2: CSS3 (Left-Bottom) -->
+  <g transform="translate(170, 165)">
+    <rect x="-55" y="-18" width="110" height="36" rx="18" fill="#081426" stroke="#3b82f6" stroke-width="1.5" />
+    <circle cx="-35" cy="0" r="4" fill="#3b82f6" />
+    <text x="8" y="5" fill="#93c5fd" class="web-mono node-title" text-anchor="middle">CSS3</text>
+  </g>
+
+  <!-- Node 3: JAVASCRIPT (Center Core Hub) -->
+  <g transform="translate(440, 125)">
+    <circle cx="0" cy="0" r="46" fill="#1a1403" stroke="#facc15" stroke-width="2.5" filter="url(#redBlueGlow)" />
+    <text x="0" y="-8" fill="#fde047" class="web-mono" font-size="11" font-weight="900" text-anchor="middle">CORE</text>
+    <text x="0" y="14" fill="#ffffff" class="web-mono" font-size="14" font-weight="800" text-anchor="middle">JAVASCRIPT</text>
+  </g>
+
+  <!-- Node 4: REACT (Top Center) -->
+  <g transform="translate(440, 42)">
+    <rect x="-65" y="-16" width="130" height="32" rx="16" fill="#081e28" stroke="#00f5ff" stroke-width="1.5" />
+    <circle cx="-42" cy="0" r="4" fill="#00f5ff" />
+    <text x="8" y="5" fill="#67e8f9" class="web-mono node-title" text-anchor="middle">REACT</text>
+  </g>
+
+  <!-- Node 5: NEXT.JS (Right-Top) -->
+  <g transform="translate(730, 65)">
+    <rect x="-65" y="-18" width="130" height="36" rx="18" fill="#110d22" stroke="#a855f7" stroke-width="1.5" />
+    <circle cx="-42" cy="0" r="4" fill="#a855f7" />
+    <text x="8" y="5" fill="#d8b4fe" class="web-mono node-title" text-anchor="middle">NEXT.JS</text>
+  </g>
+
+  <!-- Node 6: BOOTSTRAP (Right-Bottom) -->
+  <g transform="translate(700, 165)">
+    <rect x="-70" y="-18" width="140" height="36" rx="18" fill="#180b26" stroke="#9333ea" stroke-width="1.5" />
+    <circle cx="-46" cy="0" r="4" fill="#9333ea" />
+    <text x="8" y="5" fill="#e9d5ff" class="web-mono node-title" text-anchor="middle">BOOTSTRAP</text>
+  </g>
+
+  <!-- Subtitle Tag -->
+  <text x="440" y="210" fill="#94a3b8" class="web-mono" font-size="11" text-anchor="middle" letter-spacing="1.5">
+    THE WEB INTERCONNECT // ADAPTABILITY • LEARNING • RESPONSIVE ARCHITECTURE
+  </text>
+</svg>
