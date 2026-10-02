@@ -2,26 +2,33 @@
 
 # ⚡ KIRUTHICK SM
 
-### AI/ML • SOFTWARE • ROBOTICS
+### `AI/ML` • `SOFTWARE` • `ROBOTICS`
 
-<img src="https://capsule-render.vercel.app/api?type=waving&color=0:050505,50:5b21b6,100:16a34a&height=160&section=header&text=BUILD%20THE%20FUTURE&fontSize=38&fontColor=ffffff&animation=fadeIn&fontAlignY=35"/>
+<img src="https://github.com/kiruthick103.png" width="150" alt="Kiruthick SM avatar">
 
-**Building intelligent software, exploring AI, and turning ideas into systems.**
+<img src="https://capsule-render.vercel.app/api?type=waving&color=0:050505,45:4c1d95,75:7c3aed,100:16a34a&height=150&section=header&text=BUILD%20THE%20FUTURE&fontSize=38&fontColor=ffffff&animation=fadeIn&fontAlignY=38" width="100%"/>
 
-[🌐 Portfolio](https://portfolio-website-two-flax-15.vercel.app/) •
-[💻 GitHub](https://github.com/kiruthick103)
+**Computer Science Engineering student building with AI, software and robotics.**
+
+[🌐 Portfolio](https://portfolio-website-two-flax-15.vercel.app/) · [💻 GitHub](https://github.com/kiruthick103)
 
 </div>
 
 ---
 
-## 🧠 ABOUT
+## 🦸 MY DEVELOPER UNIVERSE
 
-I'm a Computer Science Engineering student interested in:
+> **Different heroes. Different powers. One mindset: build.**
 
-`AI/ML` · `Software Development` · `Computer Vision` · `Robotics` · `Full Stack`
+| 🦇 **BATMAN** | 🦾 **IRON MAN** | 🕷️ **SPIDER-MAN** | 💚 **GREEN LANTERN** |
+|:---:|:---:|:---:|:---:|
+| Strategy | Engineering | Adaptability | Imagination |
+| Logic | AI | Learning | Willpower |
 
-> **Build → Learn → Experiment → Improve**
+| ⚡ **FLASH** | 🤖 **CYBORG** | 🌀 **DOCTOR STRANGE** |
+|:---:|:---:|:---:|
+| Speed | Human × Machine | New Perspectives |
+| Execution | Robotics | Problem Solving |
 
 ---
 
@@ -30,16 +37,12 @@ I'm a Computer Science Engineering student interested in:
 ## 💚 THE WILL TO BUILD
 
 ```text
-              ╭───────────────╮
-           ╭──╯               ╰──╮
-         ╱       💚 CREATE 💚      ╲
-        │                           │
-        │        < CODE />          │
-        │                           │
-         ╲                         ╱
-           ╰──╮               ╭──╯
-              ╰───────────────╯
+                 ╭───────────────╮
+              ╭──╯   💚 CREATE   ╰──╮
+            ╱                         ╲
+           │         < CODE />         │
+            ╲                         ╱
+              ╰──╮               ╭──╯
+                 ╰───────────────╯
 
-             IMAGINATION
-                  ↓
-                BUILD
+              IMAGINATION → BUILD
